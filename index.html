@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distribuidora y Ferrelectricos "Contreras"</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <h1>Distribuidora y Ferrelectricos</h1>
+            <span>"Contreras"</span>
+        </div>
+        
+        <nav class="nav-links">
+            <a href="#nosotros">Empresa</a>
+            <a href="#catalogo">Catálogo</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+
+        <button id="btn-carrito" class="btn-cart">
+            🛒 Carrito <span id="cart-count">0</span>
+        </button>
+    </header>
+
+    <section class="hero-banner">
+        <img src="fondo.jfif" alt="Fachada Ferretería Meza El Galpón" class="hero-img">
+        <div class="hero-overlay">
+            <h2>Todo para tu Construcción u Obra en un solo lugar</h2>
+            <p>Ventas al mayor, detal y atención especializada para contratistas.</p>
+            <a href="#catalogo" class="btn-hero">Ver Catálogo</a>
+        </div>
+    </section>
+
+    <section id="nosotros" class="empresa-section container">
+        <div class="empresa-content">
+            <h2>Sobre Nosotros</h2>
+            <p>
+                Somos una empresa dedicada a la provisión de materiales de construcción, herramientas de alta gama y suministros industriales. Contamos con años de experiencia respaldando a constructores, contratistas y familias en el desarrollo de sus proyectos.
+            </p>
+            <div class="empresa-features">
+                <div class="feature-card">
+                    <span>🚛</span>
+                    <h4>Flete Pesado</h4>
+                    <p>Envíos directos a obra con grúa pluma.</p>
+                </div>
+                <div class="feature-card">
+                    <span>🏗️</span>
+                    <h4>Atención B2B</h4>
+                    <p>Presupuestos formales y créditos para empresas.</p>
+                </div>
+                <div class="feature-card">
+                    <span>⚙️</span>
+                    <h4>Asesoría Técnica</h4>
+                    <p>Dimensionamiento y corte de perfiles a medida.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main id="catalogo" class="container">
+        <h2 class="section-title">Catálogo de Productos</h2>
+
+        <div class="productos-grid">
+            <article class="producto-card" data-id="1">
+                <img src="p1.jpg" alt="bombillo">
+                <h3>Bombillo 9w</h3>
+                <p class="precio">$1.00</p>
+                <button class="btn-agregar" data-id="1" data-nombre="bombillo 9w" data-precio="1.00">Agregar al carrito</button>
+            </article>
+
+            <article class="producto-card" data-id="2">
+                <img src="p2.jpg" alt="Cinta Aislante">
+                <h3>Cinta Aislante</h3>
+                <p class="precio">$1.50</p>
+                <button class="btn-agregar" data-id="2" data-nombre="Cinta Aislante" data-precio="1.50">Agregar al carrito</button>
+            </article>
+
+            <article class="producto-card" data-id="3">
+                <img src="p3.jpg" alt="protector de voltaje">
+                <h3>protector de Voltaje</h3>
+                <p class="precio">$5.95</p>
+                <button class="btn-agregar" data-id="3" data-nombre="Protector de Voltaje" data-precio="5.95">Agregar al carrito</button>
+            </article>
+
+            <article class="producto-card" data-id="4">
+                <img src="p4.jpg" alt="breaker">
+                <h3>breaker</h3>
+                <p class="precio">$3.00</p>
+                <button class="btn-agregar" data-id="4" data-nombre="Breaker" data-precio="3.00">Agregar al carrito</button>
+            </article>
+        </div>
+
+        <div id="productos-extra" class="productos-grid productos-ocultos">
+            <article class="producto-card" data-id="5">
+                <img src="p5.jpg" alt="Socate">
+                <h3>Socate</h3>
+                <p class="precio">$0.70</p>
+                <button class="btn-agregar" data-id="5" data-nombre="Socate" data-precio="0.70">Agregar al carrito</button>
+            </article>
+
+            <article class="producto-card" data-id="6">
+                <img src="p6.jpg" alt="Cinta Teflon">
+                <h3>Cinta Teflon</h3>
+                <p class="precio">$1.00</p>
+                <button class="btn-agregar" data-id="6" data-nombre="Cinta Teflon" data-precio="1.00">Agregar al carrito</button>
+            </article>
+
+            <article class="producto-card" data-id="7">
+                <img src="p7.jpg" alt="Pegamento para PVC">
+                <h3>Pegamento para PVC</h3>
+                <p class="precio">$22.50</p>
+                <button class="btn-agregar" data-id="7" data-nombre="Pegamento para PVC" data-precio="22.50">Agregar al carrito</button>
+            </article>
+
+            <article class="producto-card" data-id="8">
+                <img src="p8.jpg" alt="Tubos PVC">
+                <h3>Tubos PVC</h3>
+                <p class="precio">$4.00</p>
+                <button class="btn-agregar" data-id="8" data-nombre="Tubos PVC" data-precio="4.00">Agregar al carrito</button>
+            </article>
+
+            <article class="producto-card" data-id="9">
+                <img src="p9.jpg" alt="Llave de Paso">
+                <h3>Llave de Paso</h3>
+                <p class="precio">$2.50</p>
+                <button class="btn-agregar" data-id="9" data-nombre="Llave de Paso" data-precio="2.50">Agregar al carrito</button>
+            </article>
+
+            <article class="producto-card" data-id="10">
+                <img src="p10.jpg" alt="Valvula Check">
+                <h3>Valvula Check</h3>
+                <p class="precio">$2.00</p>
+                <button class="btn-agregar" data-id="10" data-nombre="Valvula Check" data-precio="2.00">Agregar al carrito</button>
+            </article>
+
+            <article class="producto-card" data-id="11">
+                <img src="p11.jpg" alt="Disco de Corte para Metal">
+                <h3>Disco de Corte para Metal</h3>
+                <p class="precio">$5.00</p>
+                <button class="btn-agregar" data-id="11" data-nombre="Disco de Corte para Metal" data-precio="5.00">Agregar al carrito</button>
+            </article>
+
+            <article class="producto-card" data-id="12">
+                <img src="p12.jpg" alt="Electrodos para Soldar">
+                <h3>Electrodos para Soldar</h3>
+                <p class="precio">$3.00</p>
+                <button class="btn-agregar" data-id="12" data-nombre="Electrodos para Soldar" data-precio="3.00">Agregar al carrito</button>
+            </article>
+
+            <article class="producto-card" data-id="13">
+                <img src="p13.jpg" alt="Hojas de Lija">
+                <h3>Hojas de Lija</h3>
+                <p class="precio">$0.80</p>
+                <button class="btn-agregar" data-id="13" data-nombre="Hojas de Lija" data-precio="0.80">Agregar al carrito</button>
+            </article>
+
+            <article class="producto-card" data-id="14">
+                <img src="p14.jfif" alt="Mantas Asfalticas">
+                <h3>Mantas Asfalticas</h3>
+                <p class="precio">$45.00</p>
+                <button class="btn-agregar" data-id="14" data-nombre="Mantas Asfalticas" data-precio="45.00">Agregar al carrito</button>
+            </article>
+        </div>
+
+        <!-- Pestaña desplegable -->
+        <div class="ver-mas-container">
+            <button id="btn-toggle-productos" class="btn-toggle">
+                Ver más productos 👇
+            </button>
+        </div>
+    </main>
+
+    <footer id="contacto" class="footer">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <h3>Distribuidora y Ferrelectricos "Contreras"</h3>
+                <p class="tagline">Todo para tu construcción u obra.</p>
+                <p>Ofrecemos materiales de la mejor calidad, venta al mayor y al detal, y atención personalizada para contratistas.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contacto Directo</h4>
+                <ul class="contact-info">
+                    <li>📍 <strong>Dirección:</strong> Cr 6, Casa Nro, 12-33, Sector Centro, Tariba, Edo. Tachira.</li>
+                    <li>📞 <strong>Teléfono:</strong> +58 (414) 758-6866</li>
+                    <li>💬 <strong>WhatsApp:</strong> +58 (424) 573-7782</li>
+                    <li>✉️ <strong>Correo:</strong> contacto@ferreteriameza.com</li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Horario de Atención</h4>
+                <ul class="schedule-info">
+                    <li><strong>Lunes a Viernes:</strong> 7:30 AM - 5:00 PM</li>
+                    <li><strong>Sábados:</strong> 8:00 AM - 1:00 PM</li>
+                    <li><strong>Domingos:</strong> Cerrado</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Distribuidora y Ferrelectricos "Contreras". Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- 6. PANEL LATERAL DEL CARRITO -->
+    <aside id="carrito-panel" class="carrito-panel">
+        <div class="carrito-header">
+            <h3>Tu Cotización</h3>
+            <button id="btn-cerrar-carrito" class="btn-cerrar">&times;</button>
+        </div>
+
+        <div id="carrito-lista" class="carrito-lista">
+            <p class="carrito-vacio">El carrito está vacío.</p>
+        </div>
+
+        <div class="carrito-footer">
+            <div class="total-box">
+                <strong>Total estimado:</strong>
+                <span id="cart-total">$0.00</span>
+            </div>
+            <button id="btn-whatsapp" class="btn-whatsapp">
+                📲 Cotizar por WhatsApp
+            </button>
+        </div>
+    </aside>
+
+    <script src="script.js"></script>
+</body>
+</html>
